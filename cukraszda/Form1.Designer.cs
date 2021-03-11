@@ -34,7 +34,7 @@ namespace cukraszda
             // 
             // btnBeolvas
             // 
-            this.btnBeolvas.Location = new System.Drawing.Point(13, 13);
+            this.btnBeolvas.Location = new System.Drawing.Point(28, 24);
             this.btnBeolvas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBeolvas.Name = "btnBeolvas";
             this.btnBeolvas.Size = new System.Drawing.Size(105, 31);
