@@ -79,5 +79,21 @@ namespace cukraszda
             lbKiiras.Items.Add("A legolcsóbb sütemény: " + cukis[minIndex].Nev);
             lbKiiras.Items.Add("Ára: " + cukis[minIndex].Ar);
         }
+
+        private void btnHarmadik_Click(object sender, EventArgs e)
+        {
+            lbKiiras.Items.Clear();
+
+            int db = 0;
+            foreach (var c in cukis)
+            {
+                if (c.Dijazott == true)
+                {
+                    db++;
+                }
+            }
+
+            lbKiiras.Items.Add("Díjazott sütik száma: " + db);
+        }
     }
 }

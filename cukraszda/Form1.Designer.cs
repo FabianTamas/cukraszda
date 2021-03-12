@@ -32,7 +32,7 @@ namespace cukraszda
             this.btnBeolvas = new System.Windows.Forms.Button();
             this.btnElso = new System.Windows.Forms.Button();
             this.btnMasodik = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnHarmadik = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -71,14 +71,15 @@ namespace cukraszda
             this.btnMasodik.UseVisualStyleBackColor = true;
             this.btnMasodik.Click += new System.EventHandler(this.btnMasodik_Click);
             // 
-            // button3
+            // btnHarmadik
             // 
-            this.button3.Location = new System.Drawing.Point(12, 142);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 31);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHarmadik.Location = new System.Drawing.Point(12, 142);
+            this.btnHarmadik.Name = "btnHarmadik";
+            this.btnHarmadik.Size = new System.Drawing.Size(105, 31);
+            this.btnHarmadik.TabIndex = 3;
+            this.btnHarmadik.Text = "3. feladat";
+            this.btnHarmadik.UseVisualStyleBackColor = true;
+            this.btnHarmadik.Click += new System.EventHandler(this.btnHarmadik_Click);
             // 
             // button4
             // 
@@ -135,7 +136,7 @@ namespace cukraszda
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnHarmadik);
             this.Controls.Add(this.btnMasodik);
             this.Controls.Add(this.btnElso);
             this.Controls.Add(this.btnBeolvas);
@@ -153,7 +154,7 @@ namespace cukraszda
         private System.Windows.Forms.Button btnBeolvas;
         private System.Windows.Forms.Button btnElso;
         private System.Windows.Forms.Button btnMasodik;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnHarmadik;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
