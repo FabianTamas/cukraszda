@@ -95,5 +95,26 @@ namespace cukraszda
 
             lbKiiras.Items.Add("Díjazott sütik száma: " + db);
         }
+
+        private void btnNegyedik_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, string> sutik = new Dictionary<string, string>();
+            foreach (var c in cukis)
+            {
+                if (!sutik.ContainsKey(c.Nev))
+                {
+                    sutik.Add(c.Nev, c.Tipus);
+                }
+            }
+
+            StreamWriter sw = new StreamWriter("lista.txt");
+            foreach (var s in sutik)
+            {
+                sw.WriteLine(s.Key + " " + s.Value);
+            }
+            sw.Close();
+
+            MessageBox.Show("Sikeres kiírás.");
+        }
     }
 }
