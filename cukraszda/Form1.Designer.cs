@@ -35,9 +35,11 @@ namespace cukraszda
       this.btnHarmadik = new System.Windows.Forms.Button();
       this.btnNegyedik = new System.Windows.Forms.Button();
       this.btnotodik = new System.Windows.Forms.Button();
-      this.button6 = new System.Windows.Forms.Button();
+      this.btnmentes = new System.Windows.Forms.Button();
       this.button7 = new System.Windows.Forms.Button();
       this.lbKiiras = new System.Windows.Forms.ListBox();
+      this.tbtipus = new System.Windows.Forms.TextBox();
+      this.label1 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // btnBeolvas
@@ -101,14 +103,15 @@ namespace cukraszda
       this.btnotodik.UseVisualStyleBackColor = true;
       this.btnotodik.Click += new System.EventHandler(this.btnotodik_Click);
       // 
-      // button6
+      // btnmentes
       // 
-      this.button6.Location = new System.Drawing.Point(13, 253);
-      this.button6.Name = "button6";
-      this.button6.Size = new System.Drawing.Size(105, 31);
-      this.button6.TabIndex = 6;
-      this.button6.Text = "button6";
-      this.button6.UseVisualStyleBackColor = true;
+      this.btnmentes.Location = new System.Drawing.Point(251, 415);
+      this.btnmentes.Name = "btnmentes";
+      this.btnmentes.Size = new System.Drawing.Size(212, 31);
+      this.btnmentes.TabIndex = 6;
+      this.btnmentes.Text = "Árajánlat mentése";
+      this.btnmentes.UseVisualStyleBackColor = true;
+      this.btnmentes.Click += new System.EventHandler(this.btnmentes_Click);
       // 
       // button7
       // 
@@ -123,19 +126,37 @@ namespace cukraszda
       // 
       this.lbKiiras.FormattingEnabled = true;
       this.lbKiiras.ItemHeight = 16;
-      this.lbKiiras.Location = new System.Drawing.Point(195, 35);
+      this.lbKiiras.Location = new System.Drawing.Point(636, 8);
       this.lbKiiras.Name = "lbKiiras";
       this.lbKiiras.Size = new System.Drawing.Size(358, 276);
       this.lbKiiras.TabIndex = 8;
+      // 
+      // tbtipus
+      // 
+      this.tbtipus.Location = new System.Drawing.Point(332, 371);
+      this.tbtipus.Name = "tbtipus";
+      this.tbtipus.Size = new System.Drawing.Size(131, 23);
+      this.tbtipus.TabIndex = 9;
+      // 
+      // label1
+      // 
+      this.label1.AutoSize = true;
+      this.label1.Location = new System.Drawing.Point(248, 374);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(78, 17);
+      this.label1.TabIndex = 10;
+      this.label1.Text = "Süti típusa:";
       // 
       // frmFo
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(584, 361);
+      this.ClientSize = new System.Drawing.Size(1006, 472);
+      this.Controls.Add(this.label1);
+      this.Controls.Add(this.tbtipus);
       this.Controls.Add(this.lbKiiras);
       this.Controls.Add(this.button7);
-      this.Controls.Add(this.button6);
+      this.Controls.Add(this.btnmentes);
       this.Controls.Add(this.btnotodik);
       this.Controls.Add(this.btnNegyedik);
       this.Controls.Add(this.btnHarmadik);
@@ -148,6 +169,7 @@ namespace cukraszda
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Cukrászda";
       this.ResumeLayout(false);
+      this.PerformLayout();
 
         }
 
@@ -159,9 +181,11 @@ namespace cukraszda
         private System.Windows.Forms.Button btnHarmadik;
         private System.Windows.Forms.Button btnNegyedik;
         private System.Windows.Forms.Button btnotodik;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnmentes;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ListBox lbKiiras;
-    }
+    private System.Windows.Forms.TextBox tbtipus;
+    private System.Windows.Forms.Label label1;
+  }
 }
 

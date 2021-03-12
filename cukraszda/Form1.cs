@@ -140,5 +140,35 @@ namespace cukraszda
       ir.Close();
       MessageBox.Show("Sikeres kiírás.");
     }
+
+    private void btnmentes_Click(object sender, EventArgs e)
+    {
+      int index = 0;
+      StreamWriter ir = new StreamWriter("ajanlat.txt",true);
+      if (tbtipus.Text != "")
+      {
+        foreach (var c in cukis)
+        {
+          if (tbtipus.Text == c.Tipus)
+          {
+            ir.WriteLine(c.Nev + "," + c.Ar + "," + c.EgysegNev + "," + c.Tipus);
+            index++;
+          }
+        }
+        ir.Close();
+      }
+      else
+      {
+        MessageBox.Show("Üres paraméter");
+      }
+      if (index == 0)
+      {
+        MessageBox.Show("Nem volt ilyen süti");
+      }
+      else 
+      {
+        MessageBox.Show("Sikeres ajánlat kérés");
+      }
+    }
   }
 }
