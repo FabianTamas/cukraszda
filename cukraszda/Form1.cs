@@ -46,5 +46,10 @@ namespace cukraszda
                 }
             }
         }
+
+        private void btnMasodik_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

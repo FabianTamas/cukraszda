@@ -31,7 +31,7 @@ namespace cukraszda
         {
             this.btnBeolvas = new System.Windows.Forms.Button();
             this.btnElso = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMasodik = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -61,14 +61,15 @@ namespace cukraszda
             this.btnElso.UseVisualStyleBackColor = true;
             this.btnElso.Click += new System.EventHandler(this.btnElso_Click);
             // 
-            // button2
+            // btnMasodik
             // 
-            this.button2.Location = new System.Drawing.Point(12, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 31);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMasodik.Location = new System.Drawing.Point(12, 105);
+            this.btnMasodik.Name = "btnMasodik";
+            this.btnMasodik.Size = new System.Drawing.Size(105, 31);
+            this.btnMasodik.TabIndex = 2;
+            this.btnMasodik.Text = "button2";
+            this.btnMasodik.UseVisualStyleBackColor = true;
+            this.btnMasodik.Click += new System.EventHandler(this.btnMasodik_Click);
             // 
             // button3
             // 
@@ -135,7 +136,7 @@ namespace cukraszda
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnMasodik);
             this.Controls.Add(this.btnElso);
             this.Controls.Add(this.btnBeolvas);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -151,7 +152,7 @@ namespace cukraszda
 
         private System.Windows.Forms.Button btnBeolvas;
         private System.Windows.Forms.Button btnElso;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMasodik;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
