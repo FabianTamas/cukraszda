@@ -67,7 +67,7 @@ namespace cukraszda
             this.btnMasodik.Name = "btnMasodik";
             this.btnMasodik.Size = new System.Drawing.Size(105, 31);
             this.btnMasodik.TabIndex = 2;
-            this.btnMasodik.Text = "button2";
+            this.btnMasodik.Text = "2. feladat";
             this.btnMasodik.UseVisualStyleBackColor = true;
             this.btnMasodik.Click += new System.EventHandler(this.btnMasodik_Click);
             // 

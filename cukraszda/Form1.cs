@@ -49,7 +49,35 @@ namespace cukraszda
 
         private void btnMasodik_Click(object sender, EventArgs e)
         {
+            lbKiiras.Items.Clear();
+            
+            int max = 0;
+            int maxIndex = 0;
+            int min = 50000;
+            int minIndex = 0;
+            for (int i = 0; i < cukis.Count; i++)
+            {
+                if (cukis[i].Ar > max)
+                {
+                    max = cukis[i].Ar;
+                    maxIndex = i;
+                }
+            }
 
+            for (int i = 0; i < cukis.Count; i++)
+            {
+                if (cukis[i].Ar < min)
+                {
+                    min = cukis[i].Ar;
+                    minIndex = i;
+                }
+            }
+
+            lbKiiras.Items.Add("A legdrágább sütemény: " + cukis[maxIndex].Nev);
+            lbKiiras.Items.Add("Ára: " + cukis[maxIndex].Ar);
+
+            lbKiiras.Items.Add("A legolcsóbb sütemény: " + cukis[minIndex].Nev);
+            lbKiiras.Items.Add("Ára: " + cukis[minIndex].Ar);
         }
     }
 }
