@@ -116,5 +116,29 @@ namespace cukraszda
 
             MessageBox.Show("Sikeres kiírás.");
         }
+
+    private void btnotodik_Click(object sender, EventArgs e)
+    {
+      Dictionary<string, int> fajta = new Dictionary<string, int>();
+
+      foreach (var c in cukis)
+      {
+        if (!fajta.ContainsKey(c.Tipus))
+        {
+          fajta.Add(c.Tipus, 1);
+        }
+        else
+        {
+          fajta[c.Tipus]++;
+        }
+      }
+      StreamWriter ir = new StreamWriter("stat.csv");
+      foreach (var f in fajta)
+      {
+        ir.WriteLine(f.Key + ";" + f.Value);
+      }
+      ir.Close();
+      MessageBox.Show("Sikeres kiírás.");
     }
+  }
 }
